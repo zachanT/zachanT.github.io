@@ -1,21 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat";
 
-/* 
-https://www.youtube.com/watch?v=PwWHL3RyQgk
-https://speckyboy.com/underline-text-effects-css/
-https://css-irl.info/animating-underlines/
-https://www.30secondsofcode.org/css/s/hover-underline-animation
-
-https://www.30secondsofcode.org/css/s/image-overlay-hover
-https://www.30secondsofcode.org/css/s/hover-additional-content
-
-https://www.youtube.com/watch?v=1wfeqDyMUx4
-
-Color scheme
-https://i.redd.it/aepphltiqy911.png
-https://lospec.com/palette-list/cyberpunk-neons
- */
-
 :root {
   --main-bg-color: #0d0221;
   --orange-color: #ff6c11;
@@ -24,7 +8,6 @@ https://lospec.com/palette-list/cyberpunk-neons
 }
 
 body {
-  /* background-color: rgb(22, 22, 22); */
   background-color: var(--main-bg-color);
   color: #edf0f1;
 }
