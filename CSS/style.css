@@ -1,5 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat";
-
 :root {
   --main-bg-color: #0d0221;
   --orange-color: #ff6c11;
@@ -18,7 +16,7 @@ em {
 }
 
 header {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   display: flex;
   justify-content: flex-end;
   align-items: center;
