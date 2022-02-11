@@ -1,0 +1,195 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+/* 
+https://www.youtube.com/watch?v=PwWHL3RyQgk
+https://speckyboy.com/underline-text-effects-css/
+https://css-irl.info/animating-underlines/
+https://www.30secondsofcode.org/css/s/hover-underline-animation
+
+https://www.30secondsofcode.org/css/s/image-overlay-hover
+https://www.30secondsofcode.org/css/s/hover-additional-content
+
+https://www.youtube.com/watch?v=1wfeqDyMUx4
+
+Color scheme
+https://i.redd.it/aepphltiqy911.png
+https://lospec.com/palette-list/cyberpunk-neons
+ */
+
+:root {
+  --main-bg-color: #0d0221;
+  --orange-color: #ff6c11;
+  --purple-color: #650d89;
+  --neon-blue: #53ebe4;
+}
+
+body {
+  /* background-color: rgb(22, 22, 22); */
+  background-color: var(--main-bg-color);
+  color: #edf0f1;
+}
+
+em {
+  font-style: normal;
+  color: #e13a6a;
+}
+
+header {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 18px;
+  padding: 0% 5%;
+}
+
+h1 {
+  font-weight: 1000;
+  font-size: 54px;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+header li,
+a {
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  display: inline-block;
+  position: relative;
+}
+
+.nav_links li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1em;
+  bottom: 0;
+  left: 0;
+  background-color: var(--neon-blue);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+.nav_links li a:hover:after,
+.nav_links li a:focus:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+  align-items: center;
+}
+
+.landing {
+  position: relative;
+  background-size: cover;
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 500px 1fr;
+}
+
+#projects {
+  max-width: 75%;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 10px 0%;
+}
+
+.project_img {
+  max-width: 100%;
+  width: 900px;
+  height: auto;
+}
+
+.project_title {
+  font-size: 22px;
+  color: var(--orange-color);
+}
+
+.project_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project_tech {
+  opacity: 70%;
+}
+
+.link-img {
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+
+.demo {
+  width: 48px;
+  height: 48px;
+}
+
+#about {
+  margin-top: 200px;
+  max-width: 40%;
+}
+
+.contact_me {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.email {
+  border-width: 3px;
+  border: 1px solid var(--neon-blue);
+  padding: 1.25rem 1.75rem;
+}
+
+.email:hover {
+  background-color: rgba(83, 235, 228, 0.4);
+}
+
+.socials {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}

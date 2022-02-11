@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6e65456c58.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <title>Zachary Chan</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#">Zachary Chan</a>
+      <nav class="navbar">
+        <ul class="nav_links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- https://dribbble.com/
+        https://startbootstrap.com/themes/portfolio-resume
+        https://hackernoon.com/21-best-developer-portfolio-examples-p61j31wi
+     -->
+    </header>
+    <main>
+      <div class="landing">
+        <div class="intro">
+          <h1>Hello, I'm <em>Zachary Chan</em>.</h1>
+          <div class="icons">
+            <a href="https://github.com/zachanT" target="_blank">
+              <i class="fa fa-brands fa-github" style="font-size: 36px"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/zachary-chan-014689185" target="_blank">
+              <i class="fa fa-brands fa-linkedin" style="font-size: 36px"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project">
+            <div class="">
+              <img
+                class="project_img"
+                src="./imgs/songquiz2.PNG"
+                alt="img"
+                width="auto"
+                height="auto"
+              />
+            </div>
+            <div class="project_info">
+              <h3 class="project_title">Song Quiz 2.0</h3>
+              <p class="project_desc">
+                Simple game that plays a snippet of a random song and has the player guess
+                the name and artist. Points are awarded for correctly guessing either the
+                name or artist. One game consists of five rounds where each player takes a
+                turn guessing.
+              </p>
+              <p>
+                Enjoyed playing a similar song quiz game with my family but we always
+                wished there was more customization with the music categories that we
+                could select. I utilized the Spotify API to allow players to use their own
+                playlists as 'categories'.
+              </p>
+              <p class="project_tech">Express + React + Node + Spotify API</p>
+              <div class="project_links">
+                <a href="https://github.com/zachanT/SongQuiz2.0" target="_blank"
+                  ><i class="fa fa-brands fa-github" style="font-size: 36px"></i
+                ></a>
+                <a href="https://song-quiz-2.herokuapp.com/home" target="_blank"
+                  ><i
+                    class="fa fa-solid fa-arrow-up-right-from-square"
+                    style="font-size: 36px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project_info">
+              <h3 class="project_title">Frideshare</h3>
+              <p>
+                Application to keep track of items in a user's fridge or pantry with the
+                ability to share user's fridge and shopping list. A user can invite
+                members to join their group by entering their email. Once a user is in a
+                group you can see other members' shopping list as well as items in the
+                fridge that they are willing to share.
+              </p>
+              <p>
+                Initial frontend was done as part of a design class with a small team of
+                two other students. Added additional features and implemented a backend on
+                my own after the class ended.
+              </p>
+              <p class="project_tech">PostgreSQL + Express + Handlebars + Node</p>
+              <div class="project_links">
+                <a href="https://github.com/zachanT/FridgeApp" target="_blank"
+                  ><i class="fa fa-brands fa-github" style="font-size: 36px"></i
+                ></a>
+                <a href="https://fridgeshare.herokuapp.com/" target="_blank"
+                  ><i
+                    class="fa fa-solid fa-arrow-up-right-from-square"
+                    style="font-size: 36px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="">
+              <video class="project_img" autoplay muted>
+                <source src="imgs/Frideshare Demo.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="project">
+            <div class="">
+              <img
+                class="project_img"
+                src="./imgs/productoro.PNG"
+                alt="img"
+                width="auto"
+                height="auto"
+              />
+            </div>
+            <div class="project_info">
+              <h3 class="project_title">Productoro</h3>
+              <p class="">
+                Productoro is a new Pomodoro Timer application. Using the Pomodoro
+                technique, Productoro breaks down work in to intervals called pomos as a
+                means to enhances user time management and increase user productivity and
+                focus.
+              </p>
+              <p>
+                Worked with classmates to follow the Agile development process as a
+                software development team. This included planning, designing, developing,
+                and testing.
+              </p>
+
+              <p class="project_tech">Vanilla HTML + CSS + Javascript</p>
+              <div class="project_links">
+                <a href="https://github.com/zachanT/PomodoroApp" target="_blank"
+                  ><i class="fa fa-brands fa-github" style="font-size: 36px"></i
+                ></a>
+                <a
+                  href="https://nidhigiridhar.github.io/cse110-w21-group35/source/productoro.html"
+                  target="_blank"
+                  ><i
+                    class="fa fa-solid fa-arrow-up-right-from-square"
+                    style="font-size: 36px"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project_info">
+              <h3 class="project_title">Social Media Site</h3>
+              <p class="">
+                Application to share interesting updates about life and stay up to date
+                and interact with friends.
+              </p>
+              <p>
+                Wanted to gain some experience working with MongoDB and become more
+                familiar with React.
+              </p>
+              <p class="project_tech">MongoDB + Express + React + Node + Google OAuth</p>
+              <a href="https://github.com/zachanT/SocialMediaApp" target="_blank"
+                ><i class="fa fa-brands fa-github" style="font-size: 36px"></i
+              ></a>
+            </div>
+            <div class="">
+              <img
+                class="project_img"
+                src="./imgs/socialmedia.PNG"
+                alt="img"
+                width="auto"
+                height="auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div>
+          <h2>About me</h2>
+          <p>
+            Hello, I'm Zachary Chan, a recent computer science graduate from UC San Diego.
+          </p>
+          <p>
+            I enjoy the challenges of learning something new and applying it to a real
+            world project. I recently finished <a href="#projects">Song Quiz 2.0</a>
+            and I have already started development on my next personal project where I
+            hope to continue my learning.
+          </p>
+          <p>I am actively seeking software engineering position.</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact_me">
+          <div class="email">
+            <a href="mailto:zacharyTchan@gmail.com">Send me an Email</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/zachanT" target="_blank"
+              ><i class="fa fa-brands fa-github" style="font-size: 40px"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/zachary-chan-014689185" target="_blank"
+              ><i class="fa fa-brands fa-linkedin" style="font-size: 40px"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
